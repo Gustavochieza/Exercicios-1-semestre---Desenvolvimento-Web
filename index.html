@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="eduardo.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Média</h1>
+        <div class="funcao">
+            <input type="text" onclick=limpar() class="input" placeholder="Insira 3 números separados por vírgula" id="mediainput">
+            <button id="confirmamedia" class="botao" onclick=showmedia()><span>Calcular</span></button>
+        </div>
+        <container class="resultado">
+            <span class="resultados" id="resultado"></span>
+        </container>
+    </div>
+    <div>
+        <h1>Perimetro do Retângulo</h1>
+        <div class="funcao">
+            <input type="text" class="input" onclick=limpar() placeholder="Insira 'base, altura' do Retângulo" id="retanguloinput">
+            <button id="confirmaretangulo" class="botao" onclick=showretangulo()><span>Calcular</span></button>
+        </div>
+        <container class="resultado">
+            <span class="resultados" id="resultadoretangulo"></span>
+        </container>
+    </div>
+    <div>
+        <h1>Fahreinheit x Celsius</h1>
+        <div class="funcao">
+            <input type="text" class="input" onclick=limpar() placeholder="Insira a temperatura" id="tempinput">
+            <button id="confirmatemp" class="botao" onclick=showtemp()><span>Calcular</span></button>
+        </div>
+        <container class="resultado">
+            <span class="resultados" id="resultadotemp"></span>
+        </container>
+    </div>
+    <div>
+        <h1>Media Ponderada</h1>
+        <div class="funcao">
+            <input type="text" class="input" onclick=limpar() placeholder="Insira 'teste, prova'" id="pondinput">
+            <button id="confirmapond" class="botao" onclick=showpond()><span>Calcular</span></button>
+        </div>
+        <container class="resultado">
+            <span class="resultados" id="resultadopond"></span>
+        </container>
+    </div>
+    <div>
+        <h1>Cálculo IMC</h1>
+        <div class="funcao">
+            <input type="text" class="input" onclick=limpar() placeholder="Insira 'altura, peso'" id="imcinput">
+            <button id="confirmaimc" class="botao" onclick=showimc()><span>Calcular</span></button>
+        </div>
+        <container class="resultado">
+            <span class="resultados" id="resultadoimc"></span>
+        </container>
+    </div>
+    <div>
+        <h1>Conversão de Moeda</h1>
+        <div class="funcao">
+            <input type="text" class="input" onclick=limpar() placeholder="Insira o valor em dólares" id="moedainput">
+            <button id="confirmamoeda" class="botao" onclick=showmoeda()><span>Calcular</span></button>
+        </div>
+        <container class="resultado">
+            <span class="resultados" id="resultadomoeda"></span>
+        </container>
+    </div>
+    <div>
+        <h1>Cálculo de Desconto</h1>
+        <div class="funcao">
+            <input type="text" class="input" onclick=limpar() placeholder="Insira 'Preço, % de Desconto'" id="descontoinput">
+            <button id="confirmadesconto" class="botao" onclick=showdesconto()><span>Calcular</span></button>
+        </div>
+        <container class="resultado">
+            <span class="resultados" id="resultadodesconto"></span>
+        </container>
+    </div>
+    <div>
+</body>
+</html>
