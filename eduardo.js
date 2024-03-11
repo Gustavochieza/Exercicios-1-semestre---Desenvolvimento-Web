@@ -1,11 +1,15 @@
 function showmedia(){
     let numeros = document.getElementById("mediainput").value;
     numlist = numeros.split(',');
-    a = media(parseFloat(numlist[0]), parseFloat(numlist[1]), parseFloat(numlist[2]));
+    a = media(numlist);
     document.getElementById('resultado').innerHTML = `A média é ${a.toFixed(2)}`;
 }
-function media(a, b, c){
-    return ((a + b + c)/3)
+function media(a){
+    soma = 0
+    for (let i = 0; i<a.length; i++){
+        soma += parseFloat(a[i])
+    }
+    return (soma/a.length.toFixed(2))
 }
 function limpar(){
     const spans = document.querySelectorAll('.resultados');
